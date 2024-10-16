@@ -7,3 +7,4 @@ function getBooksData() {
 }
 
 echo json_encode(getBooksData());
+?>

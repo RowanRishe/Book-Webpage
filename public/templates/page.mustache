@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Books</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>List of Books</title>
     <style>
         body {
             background: lightskyblue;
         }
-            #loading {
-                text-align: center;
-                font-size: 2rem;
-                color: #333;
-                font-weight: bold;
-                margin: 20px 0;
+        #loading {
+            text-align: center;
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+            margin: 20px 0;
         }
     </style>
 </head>
@@ -26,29 +27,7 @@
 
 <div id="loading">Loading...</div>
 
-<div id="book-container" class="row" style="display: none;">
-</div>
-
-<!-- Mustache Template for Book Card -->
-<script id="book-template" type="x-tmpl-mustache">
-    {{#books}}
-    <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
-        <div class="card">
-            <img class="card-img-top" height="160px" style="object-fit: cover; object-position: center"
-                 src="https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/{{imageLink}}"
-                 alt="{{title}}">
-            <div class="card-body">
-                <h5 class="card-title">{{title}}</h5>
-                <p class="card-text">
-                    By {{author}} from {{country}}, written in {{language}} with {{pages}} pages.<br/>
-                    Published on {{year}}
-    </p>
-    <a target="_blank" href="{{link}}" class="btn btn-primary">Open</a>
-            </div>
-        </div>
-    </div>
-{{/books}}
-</script>
+<div id="book-container" class="row" style="display: none;"></div>
 
 <!-- JavaScript Libraries and App Script -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

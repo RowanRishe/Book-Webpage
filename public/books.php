@@ -11,3 +11,4 @@ $bookData = json_decode(file_get_contents(__DIR__ . '/../data/data.json'), true)
 
 // Pass data to the template
 echo $m->render('page', ['books' => $bookData]);
+?>
