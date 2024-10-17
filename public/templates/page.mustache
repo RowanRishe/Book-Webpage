@@ -1,3 +1,16 @@
+<!--
+    Project: 100 Books of All Time
+    File: page.mustache
+    Author: Rowan Rishe
+    Contributors:
+        Xavier Lora
+        Kyle Matthews
+        Matthew Griffith
+        Vincent Cifone
+    Date: 10/17/2024
+
+    Purpose: Acts as a mustache template to represent the primary overall page
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +32,18 @@
         }
     </style>
 </head>
+
+<!--Container for header-->
 <body class="container">
 <div class="header mt-5 mb-5">
     <h1 class="h1">100 Books of All Time</h1>
     <p>This page shows the 100 best classical books of all time.</p>
 </div>
 
+<!--Loading message element-->
 <div id="loading">Loading...</div>
 
+<!--Container for book cards-->
 <div id="book-container" class="row" style="display: none;"></div>
 
 <!-- JavaScript Libraries and App Script -->
